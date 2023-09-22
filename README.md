@@ -1,46 +1,47 @@
-
 <h1 align="center"> ~ YOLOv8Train ~ </h1>
 
-# Data Set
+# Conjunto de Dados
 
-  Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O primeiro refere-se à detecção de pessoas, enquanto o segundo diz respeito à classificação de quedas. A seguir, esses datasets serão descritos, identificados, categorizados e os métodos de carregamento serão detalhados. Além disso, neste repositório, serão referenciados os métodos de normalização e a sua compreensão para a identificação do uso correto.
+Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O primeiro é destinado à detecção de pessoas, enquanto o segundo se concentra na classificação de quedas. Vamos descrever, identificar, categorizar esses conjuntos de dados e detalhar os métodos de carregamento. Além disso, neste repositório, forneceremos informações sobre a normalização e sua importância para garantir o uso adequado dos dados.
 
-  ## Detecção
-    
-   Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google através da ferramenta OIDv4. Você pode encontrar mais informações sobre ele no seguinte link. Para o download de imagens contendo seus respectivos labels que mapeiam os quadros onde as pessoas estão localizadas e seu estado, inicialmente preparamos o OIDv4 Toolkit para posteriormente ralizar o download do dataset. Para isso, siga os comandos exigidos pelo programa:
-    
-  - INSTALAÇÃO
-    
-   1. Clone este repositório
-       ```bash
-        git clone https://github.com/EscVM/OIDv4_ToolKit.git
-        ```
-   2. Entre na pasta clonada
-       ```bash
-        cd OIDv4_ToolKit
-        ```
-   3. Instale os pacotes necessários
-       ```bash
-        pip3 install -r requirements.txt
-        ```
-    
-  - DOWNLOAD
-    
-       Para o download, inicialmente devemos saber que o nome do dataset que iremos baixar se chama "Person". Com esse dado, usamos os comandos disponibilizados no repositório do programa e selecionamos a função de download all, baixando assim todas as imagens referentes à classe pessoa.
-      ```Cmd
-      python main.py downloader --classes Person --type_csv all
-      ```
-        
-      O comando baixará todos os dados localizados na pasta "OIDv4_ToolKit\OID\Dataset". Nessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, realizaremos o treinamento com um número limitado de dados. Posteriormente, o próximo modelo utilizará não apenas o conjunto de dados completo, mas também incorporará a aplicação de interferências ambientais e elétricas para aprimorar a robustez do programa final.
-  - NORMALIZAÇÂO<br>
-    Para a normalização deste dataset, foram utilizados três códigos em Python. O primeiro código imprime o rótulo na imagem usando os próprios pixels para verificar se o dataset utiliza o padrão de localização e tamanho absoluto da imagem para mapear. Posteriormente, convertemos este rótulo para o formato exigido pelo YOLO, que é (x central, y central, altura, largura), sendo que a altura e largura se referem do ponto central até a borda. Esse processo de conversão foi guiado pelas especificações fornecidas no utilitário e no próprio repositório e site do YOLO, que descrevem o formato do mapeamento, bem como os valores numéricos, já que o YOLO não utiliza pixels, mas sim porcentagens em relação à posição.
-    
-    Posteriormente, verificamos se o resultado foi obtido corretamente, imprimindo o quadro usando os parâmetros do tipo (xc, yc, h, w) em porcentagem. Se for verificado que está funcionando corretamente, podemos continuar.
-    
-    Esses códigos estão disponíveis em outro repositório, onde são descritos integralmente todos os elementos e cuidados, além de uma descrição de transformação mais técnica. Você pode encontrar mais informações e o link na imagem abaixo:
-    <p align="center">
-      <a href="https://1drv.ms/f/s!ArPFsy1SEFgWhIhjBBqUEIBE25SlMw?e=5LFAFo">
-        <img src="https://img.icons8.com/?size=256&id=118553&format=png" alt="Descrição da imagem" width="200" />
-      </a>
-    </p>
-  ## Clasificação
+## Detecção de Pessoas
+
+Para a tarefa de detecção de pessoas, utilizamos o conjunto de dados disponibilizado pelo Google por meio da ferramenta OIDv4. Você pode obter mais informações sobre este conjunto de dados [neste link](https://storage.googleapis.com/openimages/web/index.html). Para baixar imagens com suas respectivas etiquetas que indicam as áreas onde as pessoas estão localizadas e seu estado, siga as etapas abaixo:
+
+### Instalação
+
+1. Clone este repositório
+   ```bash
+   git clone https://github.com/EscVM/OIDv4_ToolKit.git
+   ```
+
+2. Acesse a pasta clonada
+   ```bash
+   cd OIDv4_ToolKit
+   ```
+
+3. Instale as dependências necessárias
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+### Download
+
+Para o processo de download, você precisará especificar que deseja baixar o conjunto de dados "Person". Use os comandos fornecidos no repositório da ferramenta e selecione a função "download all" para baixar todas as imagens relacionadas à classe "pessoa".
+```Cmd
+python main.py downloader --classes Person --type_csv all
+```
+
+O comando baixará todos os dados para a pasta "OIDv4_ToolKit\OID\Dataset". Dentro dessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, recomendamos o treinamento com um subconjunto limitado de dados. Posteriormente, o próximo modelo usará o conjunto de dados completo e incorporará perturbações ambientais e elétricas para aprimorar a robustez do programa final.
+
+### Normalização
+
+Para normalizar esse conjunto de dados, implementamos três códigos em Python. O primeiro código adiciona rótulos às imagens usando as coordenadas dos pixels para garantir que o conjunto de dados utilize o padrão de localização e tamanho absoluto da imagem para mapear objetos. Em seguida, convertemos esses rótulos para o formato exigido pelo YOLO, que é (x central, y central, altura, largura), onde a altura e a largura se referem às distâncias do centro até as bordas da caixa delimitadora. Essa conversão segue as especificações fornecidas no utilitário e no repositório/site oficial do YOLO, que descrevem o formato do mapeamento e os valores numéricos em porcentagens, em vez de pixels.
+
+Depois de verificar que a conversão foi realizada corretamente, podemos prosseguir com o treinamento.
+
+Os códigos completos e informações detalhadas sobre a transformação estão disponíveis em outro repositório. Você pode encontrar mais informações [neste link](https://1drv.ms/f/s!ArPFsy1SEFgWhIhjBBqUEIBE25SlMw?e=5LFAFo).
+
+## Classificação de Quedas
+
+Ao lidar com o conjunto de dados de quedas, encontramos desafios em relação à quantidade e qualidade dos dados. Embora tenhamos encontrado conjuntos de dados que continham quedas, muitos deles não possuíam marcações específicas para recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que continham essas marcações: um consistindo em vídeos e outro em imagens variadas. Agora, explicaremos o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
