@@ -11,7 +11,7 @@
     
   - INSTALAÇÃO
     
-    1. Clone este repositório
+   1. Clone este repositório
        ```bash
         git clone https://github.com/EscVM/OIDv4_ToolKit.git
         ```
