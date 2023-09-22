@@ -6,12 +6,12 @@ Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O p
  -  INSTALAÇÂO
       
     1. Clone this repository
-      ```bash
+    ```bash
       git clone https://github.com/EscVM/OIDv4_ToolKit.git
       ```
     2. Install the required packages
-        ```bash
-       pip3 install -r requirements.txt
-       ```
+    ```bash
+      pip3 install -r requirements.txt
+    ```
 
 ## Clasificação
