@@ -4,7 +4,7 @@ Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O p
 
 ## Detecção
 
-Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google através da ferramenta OIDv4. Você pode encontrar mais informações sobre ele no seguinte link. Para o download de imagens contendo seus respectivos labels que mapeiam os quadros onde as pessoas estão localizadas e seu estado, inicialmente PREPARAMOS O oidV4 TOOLKIT DENTRO DA PASTA CLONADA PARA REALIZAR posteriormente o download do dataset. Para isso, siga os comandos exigidos pelo programa:
+Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google através da ferramenta OIDv4. Você pode encontrar mais informações sobre ele no seguinte link. Para o download de imagens contendo seus respectivos labels que mapeiam os quadros onde as pessoas estão localizadas e seu estado, inicialmente preparamos o OIDv4 Toolkit para posteriormente ralizar o download do dataset. Para isso, siga os comandos exigidos pelo programa:
 
   - INSTALAÇÃO
 
@@ -27,3 +27,4 @@ Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google 
     ```Cmd
     python main.py downloader --classes Person --type_csv all
     ```
+O comando baixará todos os dados localizados na pasta "OIDv4_ToolKit\OID\Dataset". Nessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, realizaremos o treinamento com um número limitado de dados. Posteriormente, o próximo modelo utilizará não apenas o conjunto de dados completo, mas também incorporará a aplicação de interferências ambientais e elétricas para aprimorar a robustez do programa final.
