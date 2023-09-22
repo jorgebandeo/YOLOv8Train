@@ -31,6 +31,10 @@
         python main.py downloader --classes Person --type_csv all
         ```
         O comando baixará todos os dados localizados na pasta "OIDv4_ToolKit\OID\Dataset". Nessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, realizaremos o treinamento com um número limitado de dados. Posteriormente, o próximo modelo utilizará não apenas o conjunto de dados completo, mas também incorporará a aplicação de interferências ambientais e elétricas para aprimorar a robustez do programa final.
-  - NORMALIZAÇÂO
-      Para a normalização deste dataset foram usados 3 codigos em python, o primeiro que impreime o label na imagem usando os proprios pixeis para verificar se o dataset usa o padrao de localização de tamanho absoluto da imagm para mapear, posteriormente convertemos este label para o fomapto esigido pelo yolo que é (x central, y central, altura, larguara) sendo que a altura e largura são referentes do ponto central ate a borda, este aparamentro de converção foir giado a partir das espisificações consedidas no utralitics no seu priprio repositorio e site descrevendo o formato do mapeamento como tambem o numerico, ja que o yolo nao utiliza pixeis e sim a porsentagem cim realaçãoa posçao, posteriormente verificamoes se o resultado foi optido coretemente imprimido o quandro usando os paramentros do tipo (xc,yc,h,w) em porsentagem, se for visualizado que esta funcionado podemos continaur 
-        
+  - NORMALIZAÇÂO<br>
+    Para a normalização deste dataset, foram utilizados três códigos em Python. O primeiro código imprime o rótulo na imagem usando os próprios pixels para verificar se o dataset utiliza o padrão de localização e tamanho absoluto da imagem para mapear. Posteriormente, convertemos este rótulo para o formato exigido pelo YOLO, que é (x central, y central, altura, largura), sendo que a altura e largura se referem do ponto central até a borda. Esse processo de conversão foi guiado pelas especificações fornecidas no utilitário e no próprio repositório e site do YOLO, que descrevem o formato do mapeamento, bem como os valores numéricos, já que o YOLO não utiliza pixels, mas sim porcentagens em relação à posição.
+    
+    Posteriormente, verificamos se o resultado foi obtido corretamente, imprimindo o quadro usando os parâmetros do tipo (xc, yc, h, w) em porcentagem. Se for verificado que está funcionando corretamente, podemos continuar.
+    
+    Esses códigos estão disponíveis em outro repositório, onde são descritos integralmente todos os elementos e cuidados, além de uma descrição de transformação mais técnica. Você pode encontrar mais informações e o link na imagem abaixo: 
+            
