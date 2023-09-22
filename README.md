@@ -31,5 +31,6 @@
         python main.py downloader --classes Person --type_csv all
         ```
         O comando baixará todos os dados localizados na pasta "OIDv4_ToolKit\OID\Dataset". Nessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, realizaremos o treinamento com um número limitado de dados. Posteriormente, o próximo modelo utilizará não apenas o conjunto de dados completo, mas também incorporará a aplicação de interferências ambientais e elétricas para aprimorar a robustez do programa final.
-    - NORMALIZAÇÂO
+  - NORMALIZAÇÂO
+      Para a normalização deste dataset foram usados 3 codigos em python, o primeiro que impreime o label na imagem usando os proprios pixeis para verificar se o dataset usa o padrao de localização de tamanho absoluto da imagm para mapear, posteriormente convertemos este label para o fomapto esigido pelo yolo que é (x central, y central, altura, larguara) sendo que a altura e largura são referentes do ponto central ate a borda, este aparamentro de converção foir giado a partir das espisificações consedidas no utralitics no seu priprio repositorio e site descrevendo o formato do mapeamento como tambem o numerico, ja que o yolo nao utiliza pixeis e sim a porsentagem cim realaçãoa posçao, posteriormente verificamoes se o resultado foi optido coretemente imprimido o quandro usando os paramentros do tipo (xc,yc,h,w) em porsentagem, se for visualizado que esta funcionado podemos continaur 
         
