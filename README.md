@@ -6,7 +6,7 @@ Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O p
 
 Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google através da ferramenta OIDv4. Você pode encontrar mais informações sobre ele no seguinte link. Para o download de imagens contendo seus respectivos labels que mapeiam os quadros onde as pessoas estão localizadas e seu estado, inicialmente PREPARAMOS O oidV4 TOOLKIT DENTRO DA PASTA CLONADA PARA REALIZAR posteriormente o download do dataset. Para isso, siga os comandos exigidos pelo programa:
 
-- INSTALAÇÃO
+  - INSTALAÇÃO
 
     1. Clone este repositório
     ```bash
@@ -21,8 +21,9 @@ Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google 
     pip3 install -r requirements.txt
     ```
 
-- DOWNLOAD
+  - DOWNLOAD
 
-Para o download, inicialmente devemos saber que o nome do dataset que iremos baixar se chama "Person". Com esse dado, usamos os comandos disponibilizados no repositório do programa e selecionamos a função de download all, baixando assim todas as imagens referentes à classe pessoa.
-```Cmd
-python main.py downloader --classes Person --type_csv all
+    Para o download, inicialmente devemos saber que o nome do dataset que iremos baixar se chama "Person". Com esse dado, usamos os comandos disponibilizados no repositório do programa e selecionamos a função de download all, baixando assim todas as imagens referentes à classe pessoa.
+    ```Cmd
+    python main.py downloader --classes Person --type_csv all
+    ```
