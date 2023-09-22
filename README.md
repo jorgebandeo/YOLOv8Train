@@ -1,6 +1,6 @@
 
 <h1 align="center"> ~ YOLOv8Train ~ </h1>
- # 1 DATA-SETS<br>
+# 1 DATA-SETS<br>
   Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O primeiro refere-se à detecção de pessoas, enquanto o segundo diz respeito à classificação de quedas. A seguir, esses datasets serão descritos, identificados, categorizados e os métodos de carregamento serão detalhados. Além disso, neste repositório, serão referenciados os métodos de normalização e a sua compreensão para a identificação do uso correto.
 
  - Detecção
