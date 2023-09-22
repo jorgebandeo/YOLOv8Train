@@ -17,8 +17,8 @@ Para a detecção, foi utilizado o dataset disponibilizado pelo próprio Google 
     pip3 install -r requirements.txt
     ```
 
-- DOWNLOAD
-
-Para o download, inicialmente devemos saber que o nome do dataset que iremos baixar se chama "Person". Com esse dado, usamos os comandos disponibilizados no repositório do programa e selecionamos a função de download all, baixando assim todas as imagens referentes à classe pessoa.
-```Cmd
-python main.py downloader --classes Person --type_csv all
+    - DOWNLOAD
+    
+    Para o download, inicialmente devemos saber que o nome do dataset que iremos baixar se chama "Person". Com esse dado, usamos os comandos disponibilizados no repositório do programa e selecionamos a função de download all, baixando assim todas as imagens referentes à classe pessoa.
+    ```Cmd
+    python main.py downloader --classes Person --type_csv all
