@@ -15,7 +15,7 @@ Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O p
     ```
 - dawload
     para o dawload iniclkammente temos que saber que o nome do dataset que iremos baixar se chama "Person", com esse dado usamos os cmoandos disponiblizado no repositorio do programa e selecioanmos a função de dawload all, dasta faomra baixando todoas as imagens referentes a clase pessoa.
-  ```Cmd
+    ```Cmd
     python main.py downloader --classes Person --type_csv all
     ```
 ## Clasificação
