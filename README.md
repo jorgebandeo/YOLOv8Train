@@ -3,7 +3,7 @@ Na construção dos modelos de IA, foram utilizados dois grupos de datasets. O p
 ## Detecção
   para a deteção foi utilizado o dataset dimponivilizado pelo proprio google atravez da feramento OIDv4, pode se verificar mais referencia sobre tal no seguinte link. Para o dawload de imagens contendo sus respectivos label que mapeima os     quadros onde estão localizadas a as pessoas e seu estado, incialmente PREPARAMOS O oidV4 TOOLKIT PARA RALIZAR posteriormente o dawload do dataset, para isto seguem os comandos exigidos pelo programa
   
-  -  INSTALAÇÂO
+ -  INSTALAÇÂO
       
     1. Clone this repository
       ```bash
