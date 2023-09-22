@@ -11,7 +11,7 @@
     
   - INSTALAÇÃO
     
-   1. Clone este repositório
+    1. Clone este repositório
        ```bash
         git clone https://github.com/EscVM/OIDv4_ToolKit.git
         ```
@@ -19,7 +19,7 @@
        ```bash
         cd OIDv4_ToolKit
         ```
-  3. Instale os pacotes necessários
+   3. Instale os pacotes necessários
        ```bash
         pip3 install -r requirements.txt
         ```
