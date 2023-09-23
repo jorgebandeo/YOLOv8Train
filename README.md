@@ -44,6 +44,35 @@ Os códigos completos e informações detalhadas sobre a transformação estão 
 
 ## Classificação de Quedas
 
-Ao lidar com o conjunto de dados de quedas, encontramos desafios em relação à quantidade e qualidade dos dados. Embora tenhamos encontrado conjuntos de dados que continham quedas, muitos deles não possuíam marcações específicas para recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que continham essas marcações: um consistindo em vídeos e outro em imagens variadas. Agora, explicaremos o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
-###   [UTTEJ KUMAR KANDAGATLA](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
-este é um dataset diponivilizado no Kaggle, o qual é composto por um banco de 485 imagens com seus reppectivos mapeametos e classes.
+Ao lidar com o conjunto de dados de quedas, enfrentamos desafios relacionados à quantidade e qualidade dos dados disponíveis. Embora tenhamos encontrado vários conjuntos de dados que continham informações sobre quedas, muitos deles não continham marcações específicas que indicassem como recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que incluíam essas marcações, um composto por vídeos e outro por imagens variadas. Agora, vamos explicar o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
+
+### Conjuntos de Dados Mapeados
+
+#### [UTTEJ KUMAR KANDAGATLA](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
+
+Este é um conjunto de dados disponibilizado no Kaggle, composto por 485 imagens, cada uma com suas respectivas marcações e classes de queda.
+
+**Para fazer o download:**
+- Clique no [link de download](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset/download?datasetVersionNumber=1).
+- O download resultará em um arquivo .rar contendo os arquivos do conjunto de dados.
+
+#### [ImViA](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
+
+Este conjunto de dados é composto por 5 grupos de vídeos, sendo que cada grupo foi gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes, enquanto os outros dois não possuem.
+
+**Para fazer o download:**
+- Clique no [link de download](http://imvia.u-bourgogne.fr/database/FallDataset.zip).
+- O download resultará em um arquivo .rar que contém 5 subpastas correspondentes a cada um dos quartos referenciados.
+
+### Conjuntos de Dados Não Mapeados
+
+#### [Adhikari, Kripesh, Hamid Bouchachia, and Hammadi Nait-Charif](https://falldataset.com)
+
+Este conjunto de dados é mencionado como não mapeado, o que indica que pode não conter marcações específicas para a localização das pessoas nas imagens. Para fazer o download deste conjunto de dados, siga as etapas abaixo:
+
+1. Acesse o [link de download](https://falldataset.com/data/).
+
+2. Você verá várias pastas, cada uma contendo um conjunto de dados de vídeo fragmentado em imagens .png.
+
+3. Você pode baixar cada conjunto de dados individualmente clicando nas pastas correspondentes. No entanto, este processo pode ser um pouco demorado, pois envolve baixar várias pastas separadamente.
+
