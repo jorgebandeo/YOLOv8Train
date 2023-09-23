@@ -106,4 +106,4 @@ Para fazer o download, siga os seguintes passos:
 
 4. O download resultará em arquivos zip contendo as informações relevantes para cada sequência.
 
-Lembre-se de citar o trabalho original de Bogdan Kwolek e Michal Kepski, conforme mencionado na descrição do conjunto de dados, caso você o utilize em sua pesquisa ou projeto. Este conjunto de dados está licenciado sob uma Licença Internacional Creative Commons Attribution-NonCommercial-ShareAlike 4.0 e destina-se a uso acadêmico não comercial. Se você pretende usar o conjunto de dados para fins comerciais, entre em contato com os criadores.
+
