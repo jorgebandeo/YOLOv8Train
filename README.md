@@ -1,7 +1,7 @@
 
 <h1 align="center"> ~ YOLOv8Train ~ </h1>
 
-#1 Conjunto de Dado
+# 1 Conjunto de Dado
 
 Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O primeiro é destinado à detecção de pessoas, enquanto o segundo se concentra na classificação de quedas. Vamos descrever, identificar, categorizar esses conjuntos de dados e detalhar os métodos de carregamento. Além disso, neste repositório, forneceremos informações sobre a normalização e sua importância para garantir o uso adequado dos dados.
 <details>
