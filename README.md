@@ -116,7 +116,8 @@ Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O pr
       3. Para cada sequência, clique nos links correspondentes para fazer o download dos dados de profundidade, dados RGB, dados de sincronização e dados do acelerômetro, conforme necessário.
       
       4. O download resultará em arquivos zip contendo as informações relevantes para cada sequência.
-**1.2.3 Normalização de Dados**
+         
+### 1.2.3 Normalização de Dados
 
 Na etapa de normalização deste conjunto de dados, que é fundamental para o método de classificação, foi necessário extrair o conteúdo de interesse das imagens. Inicialmente, optamos por utilizar apenas os conjuntos de dados que continham anotações de mapeamento, pois essas anotações nos permitiam recortar as imagens de maneira eficaz.
 
