@@ -61,14 +61,16 @@ Inicialmente, o autor compilou imagens de várias fontes e criou um conjunto de 
 
 Para gerar esses rótulos, o autor utilizou o site makesense.ai, onde inicialmente enviou as imagens e criou rótulos. No contexto deste conjunto de dados, os rótulos incluem categorias como "Queda Detectada", "Caminhada" e "Sentado". Após o upload das imagens, foram criadas caixas delimitadoras (bounding boxes) para as imagens contendo pessoas, e as respectivas categorias foram atribuídas a essas caixas delimitadoras.
 
-#### [ImViA](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
+#### [ImViA - Conjunto de Dados de Detecção de Quedas](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
 
-Este conjunto de dados é composto por 5 grupos de vídeos, sendo que cada grupo foi gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes, enquanto os outros dois não possuem.
+Este conjunto de dados é composto por cinco grupos de vídeos, cada um deles gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes para as atividades registradas, enquanto os outros dois não possuem essas marcações.
 
-**Para fazer o download:**
-- Clique no [link de download](http://imvia.u-bourgogne.fr/database/FallDataset.zip).
-- O download resultará em um arquivo .rar que contém 5 subpastas correspondentes a cada um dos quartos referenciados.
+**Como fazer o download:**
+1. Acesse o [link de download](http://imvia.u-bourgogne.fr/database/FallDataset.zip).
+2. Ao clicar no link, você fará o download de um arquivo compactado no formato .rar que contém cinco subpastas, cada uma correspondendo a um dos quartos onde as gravações foram feitas.
 
+**Sobre o Conjunto de Dados:**
+Este conjunto de dados foi criado para avaliar métodos de detecção automática de quedas em gravações de vídeo realistas. Ele inclui 191 vídeos gravados em diversos locais, como casas de idosos e escritórios, capturando atividades diárias normais, incluindo quedas. Cada vídeo é acompanhado de anotações que indicam a posição da queda nas sequências de imagem, além de caixas delimitadoras que identificam a localização do corpo humano em cada quadro. Esse conjunto de dados permite avaliar a eficácia de algoritmos de detecção de quedas em diferentes cenários e condições, sendo uma ferramenta valiosa para a pesquisa em reconhecimento de atividades humanas e segurança, especialmente para o auxílio a idosos.
 ### Conjuntos de Dados Não Mapeados
 
 #### [Adhikari, Kripesh, Hamid Bouchachia, and Hammadi Nait-Charif](https://falldataset.com)
