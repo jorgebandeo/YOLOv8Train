@@ -50,41 +50,41 @@ Ao lidar com o conjunto de dados de quedas, enfrentamos desafios relacionados à
 
    - [UTTEJ KUMAR KANDAGATLA - Conjunto de Dados de Detecção de Quedas](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
 
-Este conjunto de dados valioso e acessível no Kaggle é composto por 485 imagens, cada uma delas acompanhada de suas respectivas marcações e classes relacionadas à detecção de quedas.
-
-**Como fazer o download:**
-1. Acesse o [link de download](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset/download?datasetVersionNumber=1).
-2. Ao clicar no link, você obterá um arquivo compactado no formato .rar contendo todos os arquivos do conjunto de dados.
-
-**Sobre o Conjunto de Dados:**
-Inicialmente, o autor compilou imagens de várias fontes e criou um conjunto de dados personalizado para detecção de quedas. Este conjunto de dados possui dois diretórios principais de imagens: "train" (374 imagens), usado para treinamento, e "Val" (111 imagens), usado para validação. Além disso, há um diretório de rótulos ("labels") que também é dividido em "train" e "Val", contendo arquivos de texto com rótulos para cada imagem correspondente.
-
-Para gerar esses rótulos, o autor utilizou o site makesense.ai, onde inicialmente enviou as imagens e criou rótulos. No contexto deste conjunto de dados, os rótulos incluem categorias como "Queda Detectada", "Caminhada" e "Sentado". Após o upload das imagens, foram criadas caixas delimitadoras (bounding boxes) para as imagens contendo pessoas, e as respectivas categorias foram atribuídas a essas caixas delimitadoras.
+      Este conjunto de dados valioso e acessível no Kaggle é composto por 485 imagens, cada uma delas acompanhada de suas respectivas marcações e classes relacionadas à detecção de quedas.
+      
+      **Como fazer o download:**
+      1. Acesse o [link de download](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset/download?datasetVersionNumber=1).
+      2. Ao clicar no link, você obterá um arquivo compactado no formato .rar contendo todos os arquivos do conjunto de dados.
+      
+      **Sobre o Conjunto de Dados:**
+      Inicialmente, o autor compilou imagens de várias fontes e criou um conjunto de dados personalizado para detecção de quedas. Este conjunto de dados possui dois diretórios principais de imagens: "train" (374 imagens), usado para treinamento, e "Val" (111 imagens), usado para validação. Além disso, há um diretório de rótulos ("labels") que também é dividido em "train" e "Val", contendo arquivos de texto com rótulos para cada imagem correspondente.
+      
+      Para gerar esses rótulos, o autor utilizou o site makesense.ai, onde inicialmente enviou as imagens e criou rótulos. No contexto deste conjunto de dados, os rótulos incluem categorias como "Queda Detectada", "Caminhada" e "Sentado". Após o upload das imagens, foram criadas caixas delimitadoras (bounding boxes) para as imagens contendo pessoas, e as respectivas categorias foram atribuídas a essas caixas delimitadoras.
 
    - [ImViA - Conjunto de Dados de Detecção de Quedas](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
 
-Este conjunto de dados é composto por cinco grupos de vídeos, cada um deles gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes para as atividades registradas, enquanto os outros dois não possuem essas marcações.
-
-**Como fazer o download:**
-1. Acesse o [link de download](http://imvia.u-bourgogne.fr/database/FallDataset.zip).
-2. Ao clicar no link, você fará o download de um arquivo compactado no formato .rar que contém cinco subpastas, cada uma correspondendo a um dos quartos onde as gravações foram feitas.
-
-**Sobre o Conjunto de Dados:**
-Este conjunto de dados foi criado para avaliar métodos de detecção automática de quedas em gravações de vídeo realistas. Ele inclui 191 vídeos gravados em diversos locais, como casas de idosos e escritórios, capturando atividades diárias normais, incluindo quedas. Cada vídeo é acompanhado de anotações que indicam a posição da queda nas sequências de imagem, além de caixas delimitadoras que identificam a localização do corpo humano em cada quadro. Esse conjunto de dados permite avaliar a eficácia de algoritmos de detecção de quedas em diferentes cenários e condições, sendo uma ferramenta valiosa para a pesquisa em reconhecimento de atividades humanas e segurança, especialmente para o auxílio a idosos.
+      Este conjunto de dados é composto por cinco grupos de vídeos, cada um deles gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes para as atividades registradas, enquanto os outros dois não possuem essas marcações.
+      
+      **Como fazer o download:**
+      1. Acesse o [link de download](http://imvia.u-bourgogne.fr/database/FallDataset.zip).
+      2. Ao clicar no link, você fará o download de um arquivo compactado no formato .rar que contém cinco subpastas, cada uma correspondendo a um dos quartos onde as gravações foram feitas.
+      
+      **Sobre o Conjunto de Dados:**
+      Este conjunto de dados foi criado para avaliar métodos de detecção automática de quedas em gravações de vídeo realistas. Ele inclui 191 vídeos gravados em diversos locais, como casas de idosos e escritórios, capturando atividades diárias normais, incluindo quedas. Cada vídeo é acompanhado de anotações que indicam a posição da queda nas sequências de imagem, além de caixas delimitadoras que identificam a localização do corpo humano em cada quadro. Esse conjunto de dados permite avaliar a eficácia de algoritmos de detecção de quedas em diferentes cenários e condições, sendo uma ferramenta valiosa para a pesquisa em reconhecimento de atividades humanas e segurança, especialmente para o auxílio a idosos.
 ### 1.2.2 Conjuntos de Dados Não Mapeados
 
    - [Adhikari, Kripesh, Hamid Bouchachia, and Hammadi Nait-Charif - Conjunto de Dados de Quedas](https://falldataset.com)
 
-Este conjunto de dados é categorizado como "não mapeado", o que sugere que pode não conter anotações específicas para a localização das pessoas nas imagens. Para baixar este conjunto de dados, siga estas etapas:
-
-1. Acesse o [link de download](https://falldataset.com/data/).
-
-2. Na página, você encontrará várias pastas, cada uma contendo um conjunto de dados de vídeo fragmentado em imagens .png.
-
-3. Você pode fazer o download de cada conjunto de dados individualmente, clicando nas pastas correspondentes. No entanto, observe que esse processo pode ser demorado, pois envolve baixar várias pastas separadamente.
-
-**Sobre o Conjunto de Dados:**
-Este conjunto de dados consiste em imagens RGB e de profundidade capturadas por um sensor Kinect não calibrado, com dimensões de 320x240 pixels. Compreende um total de 21.499 imagens, das quais 16.794 são para treinamento, 3.299 para validação e 2.543 para teste. As imagens foram gravadas em 5 locais diferentes, apresentando 8 ângulos de visão distintos. Cinco participantes executaram atividades cotidianas, incluindo ficar em pé, sentar, deitar, inclinar e rastejar. Cada imagem contém um único participante. O conjunto de treinamento usa imagens de um homem de 32 anos e uma mulher de 28 anos, enquanto o conjunto de teste inclui imagens de dois participantes femininos de 19 e 40 anos e um homem de 50 anos. Todas as imagens estão dispostas em sequência, sem repetição, e cada conjunto inclui versões espelhadas horizontalmente das imagens originais para aumentar a quantidade de dados.
+      Este conjunto de dados é categorizado como "não mapeado", o que sugere que pode não conter anotações específicas para a localização das pessoas nas imagens. Para baixar este conjunto de dados, siga estas etapas:
+      
+      1. Acesse o [link de download](https://falldataset.com/data/).
+      
+      2. Na página, você encontrará várias pastas, cada uma contendo um conjunto de dados de vídeo fragmentado em imagens .png.
+      
+      3. Você pode fazer o download de cada conjunto de dados individualmente, clicando nas pastas correspondentes. No entanto, observe que esse processo pode ser demorado, pois envolve baixar várias pastas separadamente.
+      
+      **Sobre o Conjunto de Dados:**
+      Este conjunto de dados consiste em imagens RGB e de profundidade capturadas por um sensor Kinect não calibrado, com dimensões de 320x240 pixels. Compreende um total de 21.499 imagens, das quais 16.794 são para treinamento, 3.299 para validação e 2.543 para teste. As imagens foram gravadas em 5 locais diferentes, apresentando 8 ângulos de visão distintos. Cinco participantes executaram atividades cotidianas, incluindo ficar em pé, sentar, deitar, inclinar e rastejar. Cada imagem contém um único participante. O conjunto de treinamento usa imagens de um homem de 32 anos e uma mulher de 28 anos, enquanto o conjunto de teste inclui imagens de dois participantes femininos de 19 e 40 anos e um homem de 50 anos. Todas as imagens estão dispostas em sequência, sem repetição, e cada conjunto inclui versões espelhadas horizontalmente das imagens originais para aumentar a quantidade de dados.
 
    - [Michal Kępski](http://fenix.ur.edu.pl/mkepski/ds/uf.html)
       Este conjunto de dados, conhecido como "UR Fall Detection Dataset" de Michal Kępski, é uma valiosa fonte de informações para a detecção de quedas e atividades diárias. Contém 70 sequências, compostas por 30 quedas e 40 atividades diárias registradas com a ajuda de câmeras Microsoft Kinect e dados acelerométricos correspondentes. Os detalhes sobre o conjunto de dados são os seguintes:
