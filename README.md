@@ -4,8 +4,8 @@
 <summary><strong>1 Conjunto de Dado</strong></summary>
 
 Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O primeiro é destinado à detecção de pessoas, enquanto o segundo se concentra na classificação de quedas. Vamos descrever, identificar, categorizar esses conjuntos de dados e detalhar os métodos de carregamento. Além disso, neste repositório, forneceremos informações sobre a normalização e sua importância para garantir o uso adequado dos dados.
-
-## 1.1 Detecção de Pessoas
+<details>
+<summary><strong>1.1 Detecção de Pessoas</strong></summary>
 
    Para a tarefa de detecção de pessoas, utilizamos o conjunto de dados disponibilizado pelo Google por meio da ferramenta OIDv4. Você pode obter mais informações sobre este conjunto de dados [neste link](https://storage.googleapis.com/openimages/web/index.html). Para baixar imagens com suas respectivas etiquetas que indicam as áreas onde as pessoas estão localizadas e seu estado, siga as etapas abaixo:
    
@@ -42,8 +42,10 @@ Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O pr
       Depois de verificar que a conversão foi realizada corretamente, podemos prosseguir com o treinamento.
       
       Os códigos completos e informações detalhadas sobre a transformação estão disponíveis em outro repositório. Você pode encontrar mais informações [neste link](https://1drv.ms/f/s!ArPFsy1SEFgWhIhjBBqUEIBE25SlMw?e=5LFAFo).
+</details>
+<details>
 
-## 1.2 Classificação de Quedas
+<summary><strong>1.2 Classificação de Quedas</strong></summary>
 
   Ao lidar com o conjunto de dados de quedas, enfrentamos desafios relacionados à quantidade e qualidade dos dados disponíveis. Embora tenhamos encontrado vários conjuntos de dados que continham informações sobre quedas, muitos deles não continham marcações específicas que indicassem como recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que incluíam essas marcações, um composto por vídeos e outro por imagens variadas. Agora, vamos explicar o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
 
@@ -125,4 +127,6 @@ Na etapa de normalização deste conjunto de dados, que é fundamental para o m�
 Utilizamos um simples código em Python que, ao receber uma imagem e seu rótulo correspondente, aplicava as coordenadas do rótulo para realizar o recorte e, em seguida, salvava a nova imagem. Isso resultava em imagens prontas para serem usadas no treinamento.
 
 Para aumentar nossa base de dados, planejamos utilizar os resultados da detecção e classificação para identificar quedas automaticamente. Posteriormente, essas quedas seriam verificadas visualmente por meio de um sistema de revisão, semelhante a um processo de revisão de timelapse em um editor de vídeo convencional. Dessa forma, poderíamos validar os resultados e garantir a qualidade das anotações adicionais.
+</details>
+
 </details>
