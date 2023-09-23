@@ -127,7 +127,7 @@ Na etapa de normalização deste conjunto de dados, que é fundamental para o m�
 Utilizamos um simples código em Python que, ao receber uma imagem e seu rótulo correspondente, aplicava as coordenadas do rótulo para realizar o recorte e, em seguida, salvava a nova imagem. Isso resultava em imagens prontas para serem usadas no treinamento.
 
 Para aumentar nossa base de dados, planejamos utilizar os resultados da detecção e classificação para identificar quedas automaticamente. Posteriormente, essas quedas seriam verificadas visualmente por meio de um sistema de revisão, semelhante a um processo de revisão de timelapse em um editor de vídeo convencional. Dessa forma, poderíamos validar os resultados e garantir a qualidade das anotações adicionais.
-</details>
+</details><br>
 # 2 Trianmento 
 ## 2.1 [Detecção](https://github.com/jorgebandeo/YOLOv8Train/tree/main/Detect)
 ## 2.2 [Clasificção](https://github.com/jorgebandeo/YOLOv8Train/tree/main/Classificação)
