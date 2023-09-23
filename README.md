@@ -87,34 +87,34 @@ Este conjunto de dados é categorizado como "não mapeado", o que sugere que pod
 Este conjunto de dados consiste em imagens RGB e de profundidade capturadas por um sensor Kinect não calibrado, com dimensões de 320x240 pixels. Compreende um total de 21.499 imagens, das quais 16.794 são para treinamento, 3.299 para validação e 2.543 para teste. As imagens foram gravadas em 5 locais diferentes, apresentando 8 ângulos de visão distintos. Cinco participantes executaram atividades cotidianas, incluindo ficar em pé, sentar, deitar, inclinar e rastejar. Cada imagem contém um único participante. O conjunto de treinamento usa imagens de um homem de 32 anos e uma mulher de 28 anos, enquanto o conjunto de teste inclui imagens de dois participantes femininos de 19 e 40 anos e um homem de 50 anos. Todas as imagens estão dispostas em sequência, sem repetição, e cada conjunto inclui versões espelhadas horizontalmente das imagens originais para aumentar a quantidade de dados.
 
    - [Michal Kępski](http://fenix.ur.edu.pl/mkepski/ds/uf.html)
-Este conjunto de dados, conhecido como "UR Fall Detection Dataset" de Michal Kępski, é uma valiosa fonte de informações para a detecção de quedas e atividades diárias. Contém 70 sequências, compostas por 30 quedas e 40 atividades diárias registradas com a ajuda de câmeras Microsoft Kinect e dados acelerométricos correspondentes. Os detalhes sobre o conjunto de dados são os seguintes:
-
-- 30 sequências de quedas.
-- 40 sequências de atividades diárias.
-- As quedas são gravadas com duas câmeras Microsoft Kinect (câmera 0 e câmera 1).
-- As atividades diárias são gravadas com apenas uma câmera (câmera 0) e um acelerômetro.
-- Os dados do sensor foram coletados usando dispositivos PS Move (60Hz) e x-IMU (256Hz).
-- O conjunto de dados é organizado com sequências de imagens de profundidade e RGB para cada câmera, dados de sincronização e dados brutos do acelerômetro.
-- Cada fluxo de vídeo é armazenado em um arquivo zip separado no formato de sequência de imagens em PNG.
-- Os dados de profundidade são armazenados no formato PNG16 e requerem redimensionamento com a fórmula dada.
-
-Para fazer o download de um conjunto de dados específico, você pode seguir as instruções fornecidas na tabela abaixo, que lista as sequências disponíveis:
-
-| #  | Dados de Profundidade  | Dados RGB | Dados de Sincronização | Dados do Acelerômetro | Vídeo |
-|---|-----------------------|-----------|------------------------|-----------------------|-------|
-| 01 | fall-01-cam0-d.zip   | fall-01-cam1-d.zip | fall-01-cam0-rgb.zip   | fall-01-cam1-rgb.zip | fall-01-data.csv | fall-01-acc.csv | cam0 cam1 |
-| 02 | fall-02-cam0-d.zip   | fall-02-cam1-d.zip | fall-02-cam0-rgb.zip   | fall-02-cam1-rgb.zip | fall-02-data.csv | fall-02-acc.csv | cam0 cam1 |
-| 03 | fall-03-cam0-d.zip   | fall-03-cam1-d.zip | fall-03-cam0-rgb.zip   | fall-03-cam1-rgb.zip | fall-03-data.csv | fall-03-acc.csv | cam0 cam1 |
-| ...  | ... | ... | ... | ... | ... | ... | ... |
-
-Para fazer o download, siga os seguintes passos:
-
-1. Acesse o [link do conjunto de dados](http://fenix.ur.edu.pl/mkepski/ds/uf.html).
-
-2. Explore a lista de sequências disponíveis e identifique aquelas que deseja baixar.
-
-3. Para cada sequência, clique nos links correspondentes para fazer o download dos dados de profundidade, dados RGB, dados de sincronização e dados do acelerômetro, conforme necessário.
-
-4. O download resultará em arquivos zip contendo as informações relevantes para cada sequência.
+      Este conjunto de dados, conhecido como "UR Fall Detection Dataset" de Michal Kępski, é uma valiosa fonte de informações para a detecção de quedas e atividades diárias. Contém 70 sequências, compostas por 30 quedas e 40 atividades diárias registradas com a ajuda de câmeras Microsoft Kinect e dados acelerométricos correspondentes. Os detalhes sobre o conjunto de dados são os seguintes:
+      
+      - 30 sequências de quedas.
+      - 40 sequências de atividades diárias.
+      - As quedas são gravadas com duas câmeras Microsoft Kinect (câmera 0 e câmera 1).
+      - As atividades diárias são gravadas com apenas uma câmera (câmera 0) e um acelerômetro.
+      - Os dados do sensor foram coletados usando dispositivos PS Move (60Hz) e x-IMU (256Hz).
+      - O conjunto de dados é organizado com sequências de imagens de profundidade e RGB para cada câmera, dados de sincronização e dados brutos do acelerômetro.
+      - Cada fluxo de vídeo é armazenado em um arquivo zip separado no formato de sequência de imagens em PNG.
+      - Os dados de profundidade são armazenados no formato PNG16 e requerem redimensionamento com a fórmula dada.
+      
+      Para fazer o download de um conjunto de dados específico, você pode seguir as instruções fornecidas na tabela abaixo, que lista as sequências disponíveis:
+      
+      | #  | Dados de Profundidade  | Dados RGB | Dados de Sincronização | Dados do Acelerômetro | Vídeo |
+      |---|-----------------------|-----------|------------------------|-----------------------|-------|
+      | 01 | fall-01-cam0-d.zip   | fall-01-cam1-d.zip | fall-01-cam0-rgb.zip   | fall-01-cam1-rgb.zip | fall-01-data.csv | fall-01-acc.csv | cam0 cam1 |
+      | 02 | fall-02-cam0-d.zip   | fall-02-cam1-d.zip | fall-02-cam0-rgb.zip   | fall-02-cam1-rgb.zip | fall-02-data.csv | fall-02-acc.csv | cam0 cam1 |
+      | 03 | fall-03-cam0-d.zip   | fall-03-cam1-d.zip | fall-03-cam0-rgb.zip   | fall-03-cam1-rgb.zip | fall-03-data.csv | fall-03-acc.csv | cam0 cam1 |
+      | ...  | ... | ... | ... | ... | ... | ... | ... |
+      
+      Para fazer o download, siga os seguintes passos:
+      
+      1. Acesse o [link do conjunto de dados](http://fenix.ur.edu.pl/mkepski/ds/uf.html).
+      
+      2. Explore a lista de sequências disponíveis e identifique aquelas que deseja baixar.
+      
+      3. Para cada sequência, clique nos links correspondentes para fazer o download dos dados de profundidade, dados RGB, dados de sincronização e dados do acelerômetro, conforme necessário.
+      
+      4. O download resultará em arquivos zip contendo as informações relevantes para cada sequência.
 
 
