@@ -45,3 +45,5 @@ Os códigos completos e informações detalhadas sobre a transformação estão 
 ## Classificação de Quedas
 
 Ao lidar com o conjunto de dados de quedas, encontramos desafios em relação à quantidade e qualidade dos dados. Embora tenhamos encontrado conjuntos de dados que continham quedas, muitos deles não possuíam marcações específicas para recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que continham essas marcações: um consistindo em vídeos e outro em imagens variadas. Agora, explicaremos o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
+###   [UTTEJ KUMAR KANDAGATLA](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
+este é um dataset diponivilizado no Kaggle, o qual é composto por um banco de imagens com seus reppectivos mapeametos e classes.
