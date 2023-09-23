@@ -1,6 +1,7 @@
-<h1 align="center"> ~ YOLOv8Train ~ </h1>
 
-# 1 Conjunto de Dados
+<h1 align="center"> ~ YOLOv8Train ~ </h1>
+<details>
+<summary># 1 Conjunto de Dados<summary>
 
 Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O primeiro é destinado à detecção de pessoas, enquanto o segundo se concentra na classificação de quedas. Vamos descrever, identificar, categorizar esses conjuntos de dados e detalhar os métodos de carregamento. Além disso, neste repositório, forneceremos informações sobre a normalização e sua importância para garantir o uso adequado dos dados.
 
@@ -124,4 +125,4 @@ Na etapa de normalização deste conjunto de dados, que é fundamental para o m�
 Utilizamos um simples código em Python que, ao receber uma imagem e seu rótulo correspondente, aplicava as coordenadas do rótulo para realizar o recorte e, em seguida, salvava a nova imagem. Isso resultava em imagens prontas para serem usadas no treinamento.
 
 Para aumentar nossa base de dados, planejamos utilizar os resultados da detecção e classificação para identificar quedas automaticamente. Posteriormente, essas quedas seriam verificadas visualmente por meio de um sistema de revisão, semelhante a um processo de revisão de timelapse em um editor de vídeo convencional. Dessa forma, poderíamos validar os resultados e garantir a qualidade das anotações adicionais.
-
+</details>
