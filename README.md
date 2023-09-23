@@ -1,14 +1,14 @@
 <h1 align="center"> ~ YOLOv8Train ~ </h1>
 
-# Conjunto de Dados
+# 1 Conjunto de Dados
 
 Para construir modelos de IA, utilizamos dois grupos de conjuntos de dados. O primeiro é destinado à detecção de pessoas, enquanto o segundo se concentra na classificação de quedas. Vamos descrever, identificar, categorizar esses conjuntos de dados e detalhar os métodos de carregamento. Além disso, neste repositório, forneceremos informações sobre a normalização e sua importância para garantir o uso adequado dos dados.
 
-## Detecção de Pessoas
+## 1.1 Detecção de Pessoas
 
 Para a tarefa de detecção de pessoas, utilizamos o conjunto de dados disponibilizado pelo Google por meio da ferramenta OIDv4. Você pode obter mais informações sobre este conjunto de dados [neste link](https://storage.googleapis.com/openimages/web/index.html). Para baixar imagens com suas respectivas etiquetas que indicam as áreas onde as pessoas estão localizadas e seu estado, siga as etapas abaixo:
 
-### Instalação
+### 1.1.1 Instalação
 
 1. Clone este repositório
    ```bash
@@ -25,7 +25,7 @@ Para a tarefa de detecção de pessoas, utilizamos o conjunto de dados disponibi
    pip3 install -r requirements.txt
    ```
 
-### Download
+### 1.1.2Download
 
 Para o processo de download, você precisará especificar que deseja baixar o conjunto de dados "Person". Use os comandos fornecidos no repositório da ferramenta e selecione a função "download all" para baixar todas as imagens relacionadas à classe "pessoa".
 ```Cmd
@@ -34,7 +34,7 @@ python main.py downloader --classes Person --type_csv all
 
 O comando baixará todos os dados para a pasta "OIDv4_ToolKit\OID\Dataset". Dentro dessa pasta, você encontrará três subdiretórios: "treinamento", "teste" e "validação". Inicialmente, recomendamos o treinamento com um subconjunto limitado de dados. Posteriormente, o próximo modelo usará o conjunto de dados completo e incorporará perturbações ambientais e elétricas para aprimorar a robustez do programa final.
 
-### Normalização
+### 1.1.3 Normalização
 
 Para normalizar esse conjunto de dados, implementamos três códigos em Python. O primeiro código adiciona rótulos às imagens usando as coordenadas dos pixels para garantir que o conjunto de dados utilize o padrão de localização e tamanho absoluto da imagem para mapear objetos. Em seguida, convertemos esses rótulos para o formato exigido pelo YOLO, que é (x central, y central, altura, largura), onde a altura e a largura se referem às distâncias do centro até as bordas da caixa delimitadora. Essa conversão segue as especificações fornecidas no utilitário e no repositório/site oficial do YOLO, que descrevem o formato do mapeamento e os valores numéricos em porcentagens, em vez de pixels.
 
@@ -42,13 +42,13 @@ Depois de verificar que a conversão foi realizada corretamente, podemos prosseg
 
 Os códigos completos e informações detalhadas sobre a transformação estão disponíveis em outro repositório. Você pode encontrar mais informações [neste link](https://1drv.ms/f/s!ArPFsy1SEFgWhIhjBBqUEIBE25SlMw?e=5LFAFo).
 
-## Classificação de Quedas
+## 1.2 Classificação de Quedas
 
 Ao lidar com o conjunto de dados de quedas, enfrentamos desafios relacionados à quantidade e qualidade dos dados disponíveis. Embora tenhamos encontrado vários conjuntos de dados que continham informações sobre quedas, muitos deles não continham marcações específicas que indicassem como recortar as pessoas nas imagens. No entanto, encontramos dois conjuntos de dados relevantes que incluíam essas marcações, um composto por vídeos e outro por imagens variadas. Agora, vamos explicar o processo de trabalho com esses dados da mesma forma que fizemos com o conjunto de dados de detecção de pessoas.
 
-### Conjuntos de Dados Mapeados
+### 1.2.1 Conjuntos de Dados Mapeados
 
-#### [UTTEJ KUMAR KANDAGATLA - Conjunto de Dados de Detecção de Quedas](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
+   - [UTTEJ KUMAR KANDAGATLA - Conjunto de Dados de Detecção de Quedas](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
 
 Este conjunto de dados valioso e acessível no Kaggle é composto por 485 imagens, cada uma delas acompanhada de suas respectivas marcações e classes relacionadas à detecção de quedas.
 
@@ -61,7 +61,7 @@ Inicialmente, o autor compilou imagens de várias fontes e criou um conjunto de 
 
 Para gerar esses rótulos, o autor utilizou o site makesense.ai, onde inicialmente enviou as imagens e criou rótulos. No contexto deste conjunto de dados, os rótulos incluem categorias como "Queda Detectada", "Caminhada" e "Sentado". Após o upload das imagens, foram criadas caixas delimitadoras (bounding boxes) para as imagens contendo pessoas, e as respectivas categorias foram atribuídas a essas caixas delimitadoras.
 
-#### [ImViA - Conjunto de Dados de Detecção de Quedas](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
+   - [ImViA - Conjunto de Dados de Detecção de Quedas](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
 
 Este conjunto de dados é composto por cinco grupos de vídeos, cada um deles gravado em quartos diferentes. Três dos quartos possuem marcações de mapeamento e classes para as atividades registradas, enquanto os outros dois não possuem essas marcações.
 
@@ -71,9 +71,9 @@ Este conjunto de dados é composto por cinco grupos de vídeos, cada um deles gr
 
 **Sobre o Conjunto de Dados:**
 Este conjunto de dados foi criado para avaliar métodos de detecção automática de quedas em gravações de vídeo realistas. Ele inclui 191 vídeos gravados em diversos locais, como casas de idosos e escritórios, capturando atividades diárias normais, incluindo quedas. Cada vídeo é acompanhado de anotações que indicam a posição da queda nas sequências de imagem, além de caixas delimitadoras que identificam a localização do corpo humano em cada quadro. Esse conjunto de dados permite avaliar a eficácia de algoritmos de detecção de quedas em diferentes cenários e condições, sendo uma ferramenta valiosa para a pesquisa em reconhecimento de atividades humanas e segurança, especialmente para o auxílio a idosos.
-### Conjuntos de Dados Não Mapeados
+### 1.2.2 Conjuntos de Dados Não Mapeados
 
-#### [Adhikari, Kripesh, Hamid Bouchachia, and Hammadi Nait-Charif - Conjunto de Dados de Quedas](https://falldataset.com)
+   - [Adhikari, Kripesh, Hamid Bouchachia, and Hammadi Nait-Charif - Conjunto de Dados de Quedas](https://falldataset.com)
 
 Este conjunto de dados é categorizado como "não mapeado", o que sugere que pode não conter anotações específicas para a localização das pessoas nas imagens. Para baixar este conjunto de dados, siga estas etapas:
 
@@ -86,7 +86,7 @@ Este conjunto de dados é categorizado como "não mapeado", o que sugere que pod
 **Sobre o Conjunto de Dados:**
 Este conjunto de dados consiste em imagens RGB e de profundidade capturadas por um sensor Kinect não calibrado, com dimensões de 320x240 pixels. Compreende um total de 21.499 imagens, das quais 16.794 são para treinamento, 3.299 para validação e 2.543 para teste. As imagens foram gravadas em 5 locais diferentes, apresentando 8 ângulos de visão distintos. Cinco participantes executaram atividades cotidianas, incluindo ficar em pé, sentar, deitar, inclinar e rastejar. Cada imagem contém um único participante. O conjunto de treinamento usa imagens de um homem de 32 anos e uma mulher de 28 anos, enquanto o conjunto de teste inclui imagens de dois participantes femininos de 19 e 40 anos e um homem de 50 anos. Todas as imagens estão dispostas em sequência, sem repetição, e cada conjunto inclui versões espelhadas horizontalmente das imagens originais para aumentar a quantidade de dados.
 
-#### [Michal Kępski](http://fenix.ur.edu.pl/mkepski/ds/uf.html)
+   - [Michal Kępski](http://fenix.ur.edu.pl/mkepski/ds/uf.html)
 Este conjunto de dados, conhecido como "UR Fall Detection Dataset" de Michal Kępski, é uma valiosa fonte de informações para a detecção de quedas e atividades diárias. Contém 70 sequências, compostas por 30 quedas e 40 atividades diárias registradas com a ajuda de câmeras Microsoft Kinect e dados acelerométricos correspondentes. Os detalhes sobre o conjunto de dados são os seguintes:
 
 - 30 sequências de quedas.
