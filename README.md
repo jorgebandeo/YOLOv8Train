@@ -128,7 +128,10 @@ Utilizamos um simples código em Python que, ao receber uma imagem e seu rótulo
 
 Para aumentar nossa base de dados, planejamos utilizar os resultados da detecção e classificação para identificar quedas automaticamente. Posteriormente, essas quedas seriam verificadas visualmente por meio de um sistema de revisão, semelhante a um processo de revisão de timelapse em um editor de vídeo convencional. Dessa forma, poderíamos validar os resultados e garantir a qualidade das anotações adicionais.
 </details><br>
-# Treinamento
+
+# 2 Treinamento<br>
+
 ## 2.1 [Detecção](https://github.com/jorgebandeo/YOLOv8Train/tree/main/Detect)<br>
+
 ## 2.2 [Clasificção](https://github.com/jorgebandeo/YOLOv8Train/tree/main/Classificação)<br>
 
