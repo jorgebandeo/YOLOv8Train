@@ -48,13 +48,18 @@ Ao lidar com o conjunto de dados de quedas, enfrentamos desafios relacionados à
 
 ### Conjuntos de Dados Mapeados
 
-#### [UTTEJ KUMAR KANDAGATLA](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
+#### [UTTEJ KUMAR KANDAGATLA - Conjunto de Dados de Detecção de Quedas](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset)
 
-Este é um conjunto de dados disponibilizado no Kaggle, composto por 485 imagens, cada uma com suas respectivas marcações e classes de queda.
+Este conjunto de dados valioso e acessível no Kaggle é composto por 485 imagens, cada uma delas acompanhada de suas respectivas marcações e classes relacionadas à detecção de quedas.
 
-**Para fazer o download:**
-- Clique no [link de download](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset/download?datasetVersionNumber=1).
-- O download resultará em um arquivo .rar contendo os arquivos do conjunto de dados.
+**Como fazer o download:**
+1. Acesse o [link de download](https://www.kaggle.com/datasets/uttejkumarkandagatla/fall-detection-dataset/download?datasetVersionNumber=1).
+2. Ao clicar no link, você obterá um arquivo compactado no formato .rar contendo todos os arquivos do conjunto de dados.
+
+**Sobre o Conjunto de Dados:**
+Inicialmente, o autor compilou imagens de várias fontes e criou um conjunto de dados personalizado para detecção de quedas. Este conjunto de dados possui dois diretórios principais de imagens: "train" (374 imagens), usado para treinamento, e "Val" (111 imagens), usado para validação. Além disso, há um diretório de rótulos ("labels") que também é dividido em "train" e "Val", contendo arquivos de texto com rótulos para cada imagem correspondente.
+
+Para gerar esses rótulos, o autor utilizou o site makesense.ai, onde inicialmente enviou as imagens e criou rótulos. No contexto deste conjunto de dados, os rótulos incluem categorias como "Queda Detectada", "Caminhada" e "Sentado". Após o upload das imagens, foram criadas caixas delimitadoras (bounding boxes) para as imagens contendo pessoas, e as respectivas categorias foram atribuídas a essas caixas delimitadoras.
 
 #### [ImViA](https://imvia.u-bourgogne.fr/en/database/fall-detection-dataset-2.html)
 
